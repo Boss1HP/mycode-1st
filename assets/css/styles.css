@@ -28,7 +28,7 @@ body {
     position: sticky;
     top: -44px;
     z-index: 10;
-    background: #ffa;
+    background: #fff;
 }
 
 .header .content {
@@ -82,9 +82,8 @@ body {
 
 /* ========== Hero ========== */
 .hero {
-    background: rgb(58, 183, 106);
-    height: calc(100vh - 108px);
     padding: 42px 0 79px;
+    background: #fff;
 }
 
 .hero .content {
@@ -93,6 +92,221 @@ body {
     justify-content: space-between;
 }
 
-.hero .text-box {
+/* = */
+.hero-text {
     width: 458px;
+}
+
+.hero-text .desc:first-of-type {
+    color: #767e7e;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.hero .title-lv1 {
+    margin-top: 18px;
+    margin-bottom: 46px;
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.16;
+}
+
+.hero-text .desc:last-of-type {
+    margin-bottom: 52px;
+    width: 374px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.78;
+}
+
+.hero .cta-group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero .cta-group .btn {
+    width: 186px;
+    height: 68px;
+    border-radius: 14px;
+    background: #1ebfc1;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    line-height: 68px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.hero .cta-group .btn:hover {
+    opacity: 0.9;
+}
+
+.hero .cta-group .play {
+    width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 22px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 999px;
+}
+
+/* = */
+.hero-img {
+    position: relative;
+}
+
+.hero .img-hero {
+    width: 576px;
+    height: 631px;
+}
+
+.hero-img .info-student {
+    background: #fefefd;
+    position: absolute;
+    left: 324px;
+    top: 500px;
+    border-radius: 24px;
+    padding: 17px 35px;
+}
+
+.hero-img .info-student .desc {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.hero-img .avatar-group {
+    display: flex;
+    align-items: center;
+}
+
+.hero-img .avatar {
+    width: 33px;
+    height: 33px;
+    border-radius: 999px;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-left: -7px;
+}
+
+.hero-img .avatar:nth-child(1) {
+    background: #1ebfc1;
+}
+
+.hero-img .avatar:nth-child(2) {
+    background: #ffc147;
+}
+
+.hero-img .avatar:nth-child(3) {
+    background: #ff947a;
+}
+
+.hero-img .avatar:nth-child(4) {
+    background: #bf83ff;
+}
+
+.hero-img span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1ebfc1;
+    width: 33px;
+    height: 33px;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    flex-shrink: 0;
+    margin-left: -7px;
+}
+
+.hero-img .course {
+    display: inline-block;
+    padding: 17px 25px;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 149px;
+    left: -40px;
+}
+
+.hero-img .schedule {
+    width: 124px;
+    height: 132px;
+    overflow: hidden;
+    position: absolute;
+    top: 453px;
+    left: -65px;
+}
+
+.hero-img .schedule img {
+    position: absolute;
+    top: -70px;
+    left: -80px;
+}
+
+/* ========== Feature ========== */
+.feature {
+    background-color: #ffffff;
+    padding: 130px 0;
+}
+
+.feature .content {
+    padding-right: 146px;
+}
+
+.feature .label {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.feature .title-lv2 {
+    color: #0d1111;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.33;
+    margin: 16px 0;
+    width: 577px;
+}
+
+.feature .top .desc {
+    width: 590px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.feature-list {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    gap: 16.6rem;
+}
+
+.feature-list .item {
+    flex: 1;
+}
+
+.feature-list .title-lv3 {
+    margin: 26px 0 16px;
+}
+
+.feature-list .title-lv3 a {
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.feature-list .desc {
+    color: #9da6a5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.69;
 }
