@@ -312,13 +312,17 @@ body {
 }
 
 /* ========== Course ========== */
+.course {
+    padding-bottom: 99px;
+}
+
 .course .top .label {
     color: #767e7e;
     font-size: 1.2rem;
     font-weight: 700;
 }
 
-.course .top .title-lv3 {
+.course .top .title-lv2 {
     color: #0d1111;
     font-size: 4.2rem;
     font-weight: 700;
@@ -365,12 +369,26 @@ body {
     position: relative;
 }
 
-.course-list .item .image {
-    width: 100%;
+.course-list .image {
+    position: relative;
     height: 393px;
+}
+
+.course-list .image img {
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
-    opacity: 0.35;
+}
+
+.course-list .image .overlay {
     background: #d0efed;
+    opacity: 0.35;
+    border-radius: 8px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 2;
 }
 
 .course-list .item .info {
@@ -383,6 +401,7 @@ body {
     background: #fff;
     box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
     padding: 18px 0 28px 25px;
+    z-index: 3;
 }
 
 .course-list .title-lv4 a {
@@ -427,4 +446,207 @@ body {
     height: 6px;
 }
 
-/* ========== Course ========== */
+/* ========== Data ========== */
+.data {
+    margin: 265px 0;
+}
+
+.data .content {
+    width: 862px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.data .content .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-number {
+    display: inline-block;
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 9.3rem;
+    height: 93px;
+}
+
+.data-label {
+    margin-top: 11px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    height: 27px;
+    line-height: 2.7rem;
+}
+
+/* ========== Feedback ========== */
+.feedback .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 130px;
+}
+
+/* = */
+.feedback-text {
+    width: 419px;
+}
+
+.feedback-text .desc {
+    margin-top: 27px;
+    margin-bottom: 33px;
+    color: #5d6564;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.feedback-text .author strong {
+    position: relative;
+    margin-left: 13px;
+    color: #070707;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.feedback-text .author strong::before {
+    display: inline-block;
+    content: "";
+    width: 8px;
+    height: 2px;
+    background: #070707;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -13px;
+}
+
+.feedback-text .author span {
+    color: #767e7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.feedback-text .arrows {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 52px;
+}
+
+.feedback-text .arrows .btn {
+    width: 50px;
+    height: 50px;
+    background: #2ac9bf;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-text .arrows .btn:hover {
+    opacity: 0.9;
+}
+
+/* = */
+.feedback-avatar {
+    position: relative;
+    height: 481px;
+}
+
+.feedback-avatar img {
+    object-fit: cover;
+    border-radius: 999px;
+    position: absolute;
+}
+
+.feedback-avatar .avt-center {
+    width: 235px;
+    height: 235px;
+    right: 171px;
+    top: 107px;
+    background: #ff8282;
+}
+
+.feedback-avatar .top-left {
+    width: 92px;
+    height: 92px;
+    top: 0;
+    right: 443px;
+    background: #1ebfc1;
+}
+
+.feedback-avatar .top-right {
+    width: 110px;
+    height: 110px;
+    top: 19px;
+    right: 0;
+    background: #bf83ff;
+}
+
+.feedback-avatar .bot-right {
+    width: 78px;
+    height: 78px;
+    top: 374px;
+    right: 32px;
+    background: #b1dfdc;
+}
+
+.feedback-avatar .bot-left {
+    width: 78px;
+    height: 78px;
+    top: 403px;
+    right: 389px;
+    background: #ff947a;
+}
+
+.feedback-avatar .avt-left {
+    width: 78px;
+    height: 78px;
+    top: 258px;
+    right: 601px;
+    background: #ffc147;
+}
+
+/* ========== Invite ========== */
+.invite {
+    background: #def6f5;
+    padding: 76px 0 88px;
+}
+
+.invite .content {
+    display: flex;
+    align-items: center;
+}
+
+.invite-text {
+    width: 420px;
+    margin-right: 410px;
+}
+
+.invite-text .title-lv2 {
+    color: #070707;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.invite-text .desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 18px;
+}
+
+/* = */
+.invite .btn {
+    width: 186px;
+    height: 68px;
+    border-radius: 14px;
+    background: #2ac9bf;
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
