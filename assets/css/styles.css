@@ -13,7 +13,6 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
-    height: 10000px;
 }
 
 .content {
@@ -649,4 +648,62 @@ body {
     color: #fff;
     font-size: 1.8rem;
     font-weight: 600;
+}
+
+/* ========== Footer ========== */
+.footer {
+    padding: 130px 0 50px;
+}
+
+/* = */
+.foot-top {
+    display: flex;
+    align-items: flex-start;
+}
+
+.foot-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 144px;
+    margin-left: 144px;
+}
+
+.foot-top .item .title-lv4 {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 26px;
+}
+
+.foot-top .item li {
+    margin-bottom: 18px;
+}
+
+.foot-top .item a {
+    color: #535353;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.foot-top .social {
+    margin-left: auto;
+}
+
+.foot-top .social .title-lv4 {
+    margin-bottom: 18px;
+}
+
+.foot-top .social li {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+/* = */
+.footer .desc {
+    text-align: center;
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 80px;
 }
